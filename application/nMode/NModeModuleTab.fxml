@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="780.0"
+	prefWidth="1264.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.nMode.NModeMainController">
+	<children>
+		<AnchorPane fx:id="custom" layoutX="38.0" layoutY="31.0"
+			prefHeight="403.0" prefWidth="1182.0">
+			<children>
+				<AnchorPane fx:id="custom1" layoutX="30.0" layoutY="11.0"
+					prefHeight="342.0" prefWidth="1118.0">
+					<children>
+						<Label layoutX="19.0" layoutY="49.0" text="ENG :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="18.0" layoutY="79.0" text="ECS :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="17.0" layoutY="109.0" text="MDPS :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="17.0" layoutY="139.0" text="REV :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="16.0" layoutY="169.0" text="E -LSD :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="17.0" layoutY="199.0" text="ESC :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="17.0" layoutY="230.0" text="Exhaust Sound :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="19.0" layoutY="260.0" text="TM type :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<AnchorPane fx:id="check_a_inst_ctlr" layoutX="140.0"
+							layoutY="18.0" prefHeight="278.0" prefWidth="200.0">
+							<children>
+								<ChoiceBox fx:id="check_ENG" layoutX="24.0" layoutY="29.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Uninstalled" />
+											<String fx:value="Installed" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="check_ECS" layoutX="24.0" layoutY="59.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Uninstalled" />
+											<String fx:value="Installed" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="check_MDPS" layoutX="24.0" layoutY="89.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Uninstalled" />
+											<String fx:value="Installed" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="check_REV" layoutX="24.0" layoutY="119.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Uninstalled" />
+											<String fx:value="Installed" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="check_E_LSD" layoutX="24.0" layoutY="149.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Uninstalled" />
+											<String fx:value="Installed" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="check_ESC" layoutX="24.0" layoutY="179.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Uninstalled" />
+											<String fx:value="Installed" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="check_Exhaust_sound" layoutX="24.0" layoutY="210.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Uninstalled" />
+											<String fx:value="Installed" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="check_TM_type" layoutX="24.0" layoutY="240.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="A/T Vehicle" />
+											<String fx:value="E-Clutch Vehicle" />
+											<String fx:value="CVT Vehicle" />
+											<String fx:value="DCT Vehicle" />
+											<String fx:value="AMT Vehicle" />
+											<String fx:value="M/T Vehicle" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<Label fx:id="check_inst_ctlr_label" layoutX="20.0"
+									layoutY="-12.0" text=" Check a Installation Ctlr ">
+									<font>
+										<Font name="System Bold" size="14.0" />
+									</font>
+								</Label>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="fault_status" layoutX="395.0"
+							layoutY="18.0" prefHeight="278.0" prefWidth="200.0">
+							<children>
+								<ChoiceBox fx:id="fault_ENG" layoutX="24.0" layoutY="29.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Not Defective" />
+											<String fx:value="Defective" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="fault_ECS" layoutX="24.0" layoutY="59.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Not Defective" />
+											<String fx:value="Defective" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="fault_MDPS" layoutX="24.0" layoutY="89.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Not Defective" />
+											<String fx:value="Defective" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="fault_REV" layoutX="24.0" layoutY="119.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Not Defective" />
+											<String fx:value="Defective" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="fault_E_LSD" layoutX="24.0" layoutY="149.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Not Defective" />
+											<String fx:value="Defective" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="fault_ESC" layoutX="24.0" layoutY="179.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Not Defective" />
+											<String fx:value="Defective" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="fault_Exhaust_sound" layoutX="24.0" layoutY="210.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Not Defective" />
+											<String fx:value="Defective" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="fault_TM_type" layoutX="24.0" layoutY="240.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Failure" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<Label fx:id="fault_sts_label" layoutX="20.0" layoutY="-12.0"
+									text=" Fault Status ">
+									<font>
+										<Font name="System Bold" size="14.0" />
+									</font>
+								</Label>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="set" layoutX="645.0" layoutY="18.0"
+							prefHeight="311.0" prefWidth="200.0">
+							<children>
+								<ChoiceBox fx:id="set_ENG" layoutX="24.0" layoutY="29.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Eco" />
+											<String fx:value="Sport+" />
+											<String fx:value="Smart" />
+											<String fx:value="Snow" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="set_ECS" layoutX="24.0" layoutY="59.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Comfort+" />
+											<String fx:value="Sport+" />
+											<String fx:value="Smart" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="set_MDPS" layoutX="24.0" layoutY="89.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Comfort+" />
+											<String fx:value="Sport+" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="set_REV" layoutX="24.0" layoutY="119.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Off" />
+											<String fx:value="Sport+" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="set_E_LSD" layoutX="24.0" layoutY="149.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="set_ESC" layoutX="24.0" layoutY="179.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Off" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="set_Exhaust_sound" layoutX="24.0" layoutY="210.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Comfort" />
+											<String fx:value="Sport+" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="set_TM_type" layoutX="24.0" layoutY="240.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Eco" />
+											<String fx:value="Sport+" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<Label fx:id="set_label" layoutX="20.0" layoutY="-12.0"
+									text=" Set ">
+									<font>
+										<Font name="System Bold" size="14.0" />
+									</font>
+								</Label>
+								<ChoiceBox fx:id="set_TM_creep_start" layoutX="25.0" layoutY="271.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="On" />
+											<String fx:value="Off" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="feedback" layoutX="896.0" layoutY="18.0"
+							prefHeight="311.0" prefWidth="200.0">
+							<children>
+								<ChoiceBox fx:id="feedback_ENG" layoutX="24.0" layoutY="29.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Eco" />
+											<String fx:value="Sport+" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="feedback_ECS" layoutX="24.0" layoutY="59.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Comfort+" />
+											<String fx:value="Sport+" />
+											<String fx:value="Smart" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="feedback_MDPS" layoutX="24.0" layoutY="89.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Comfort+" />
+											<String fx:value="Sport+" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="feedback_REV" layoutX="24.0" layoutY="119.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Off" />
+											<String fx:value="Sport+" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="feedback_E_LSD" layoutX="24.0" layoutY="149.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="feedback_ESC" layoutX="24.0" layoutY="179.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Off" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="feedback_Exhaust_sound" layoutX="24.0" layoutY="210.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Comfort" />
+											<String fx:value="Sport+" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<ChoiceBox fx:id="feedback_TM_type" layoutX="24.0" layoutY="240.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="Normal" />
+											<String fx:value="Sport" />
+											<String fx:value="Eco" />
+											<String fx:value="Sport+" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+								<Label fx:id="feedback_label" layoutX="20.0" layoutY="-12.0"
+									text=" Feedback ">
+									<font>
+										<Font name="System Bold" size="14.0" />
+									</font>
+								</Label>
+								<ChoiceBox fx:id="feedback_TM_creep_start" layoutX="25.0" layoutY="270.0" prefWidth="150.0">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<String fx:value="On" />
+											<String fx:value="Off" />
+											<String fx:value="Invalid" />
+										</FXCollections>
+									</items>
+								</ChoiceBox>
+							</children>
+						</AnchorPane>
+						<Label layoutX="19.0" layoutY="294.0" text="TM -Creep Start :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="17.0" layoutY="14.0" text="Function"
+							underline="true">
+							<font>
+								<Font name="System Bold" size="16.0" />
+							</font>
+						</Label>
+					</children>
+				</AnchorPane>
+				<ChoiceBox fx:id="Drive_mode_Type"  layoutX="197.0" layoutY="363.0" prefWidth="150.0" >
+							<items>
+								<FXCollections fx:factory="observableArrayList">
+									<String fx:value="1" />
+									<String fx:value="2" />
+									<String fx:value="3" />
+									<String fx:value="4" />
+									<String fx:value="5" />
+								</FXCollections>
+							</items>
+						</ChoiceBox>
+				<Label layoutX="47.0" layoutY="362.0" text="Drive mode Type :">
+					<font>
+						<Font name="System Bold" size="16.0" />
+					</font>
+				</Label>
+				<Label fx:id="custom_label" layoutX="82.0" layoutY="-14.0"
+					text="  CUSTOM  ">
+					<font>
+						<Font name="System Bold" size="16.0" />
+					</font>
+				</Label>
+				<Button fx:id="Custom_Send" layoutX="700.0" layoutY="361.0" mnemonicParsing="false" onAction="#onCustomSend"
+					prefHeight="30.0" prefWidth="403.0" text="SEND">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Button>
+			</children>
+		</AnchorPane>
+		<AnchorPane fx:id="Gauge" layoutX="38.0" layoutY="463.0"
+			prefHeight="235.0" prefWidth="1182.0">
+			<children>
+				<AnchorPane fx:id="vehicle_speed" layoutX="809.0"
+					layoutY="26.0" prefHeight="93.0" prefWidth="361.0">
+					<children>
+						<ChoiceBox fx:id="Clu_Speed_unit" layoutX="183.0" layoutY="50.0" prefWidth="150.0" onAction="#onCluSpeedunitchanged">
+							<items>
+								<FXCollections fx:factory="observableArrayList">
+									<String fx:value="kph" />
+									<String fx:value="mph" />
+									<String fx:value="Invalid" />
+								</FXCollections>
+							</items>
+						</ChoiceBox>
+						<Label layoutX="22.0" layoutY="22.0" text="Clu_Display Speed :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="24.0" layoutY="52.0" text="Clu_Speed_unit :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="vehicle_speed_label" layoutX="35.0" layoutY="-16.0"
+							text=" Vehicle Speed ">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<TextField fx:id="Clu_Display_Speed" layoutX="182.0" layoutY="22.0" prefHeight="25.0"
+							prefWidth="150.0" />
+					</children>
+				</AnchorPane>
+				<Label layoutX="785.0" layoutY="150.0" text="Oil Temp :">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Label>
+				<TextField fx:id="Oil_Temp" layoutX="903.0" layoutY="150.0" prefHeight="25.0"
+					prefWidth="92.0" />
+				<Label layoutX="785.0" layoutY="186.0" text="Coolant Temp :">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Label>
+				<TextField fx:id="Coolant_Temp" layoutX="903.0" layoutY="186.0" prefHeight="25.0"
+					prefWidth="92.0" />
+				<AnchorPane fx:id="torque" layoutX="36.0" layoutY="26.0"
+					prefHeight="93.0" prefWidth="751.0">
+					<children>
+						<ChoiceBox fx:id="Mul_code" layoutX="163.0" layoutY="57.0" prefWidth="150.0">
+							<items>
+								<FXCollections fx:factory="observableArrayList">
+									<String fx:value="CAN_VERS" />
+									<String fx:value="CONF_TCU" />
+									<String fx:value="OBD_FRF_ACK" />
+									<String fx:value="TQ_STND" />
+								</FXCollections>
+							</items>
+						</ChoiceBox>
+						<ChoiceBox fx:id="Nmode_Torque_unit_CLU" layoutX="575.0" layoutY="57.0" prefWidth="150.0" onAction="#onTorqueUnit">
+							<items>
+								<FXCollections fx:factory="observableArrayList">
+									<String fx:value="Initial Value" />
+									<String fx:value="N.m" />
+									<String fx:value="lb.ft" />
+									<String fx:value="Invalid" />
+								</FXCollections>
+							</items>
+						</ChoiceBox>
+						<Label layoutX="35.0" layoutY="59.0" text="MUL_CODE :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="356.0" layoutY="59.0" text="Nmode_Torque_unit_CLU :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="torque_label" layoutX="35.0" layoutY="-16.0"
+							text=" Torque ">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="36.0" layoutY="16.0" text="TQL_ACOR :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<TextField fx:id="TQL_ACOR" layoutX="151.0" layoutY="15.0" prefHeight="25.0"
+							prefWidth="92.0" />
+						<Label layoutX="269.0" layoutY="18.0" text="TQ_STND :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<TextField fx:id="TQ_STND" layoutX="384.0" layoutY="17.0" prefHeight="25.0"
+							prefWidth="92.0" />
+						<Label layoutX="530.0" layoutY="20.0" text="TQFR :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<TextField  fx:id="TQFR" layoutX="621.0" layoutY="19.0" prefHeight="25.0" onAction="#onTQFRValueChanged"
+							prefWidth="92.0" />
+					</children>
+				</AnchorPane>
+				<AnchorPane fx:id="turbo_boost" layoutX="309.0" layoutY="140.0"
+					prefHeight="82.0" prefWidth="425.0">
+					<children>
+						<ChoiceBox fx:id="Nmode_TurboBoost_unit" layoutX="215.0" layoutY="43.0" prefWidth="150.0" onAction="#onTurboUnit">
+							<items>
+								<FXCollections fx:factory="observableArrayList">
+									<String fx:value="Initial Value" />
+									<String fx:value="kPa" />
+									<String fx:value="psi" />
+									<String fx:value="Bar" />
+									<String fx:value="Invalid" />
+								</FXCollections>
+							</items>
+						</ChoiceBox>
+						<Label layoutX="10.0" layoutY="45.0" text="Nmode_TurboBoost_unit :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="turbo_boost_label" layoutX="35.0" layoutY="-16.0"
+							text=" Turbo Boost ">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label layoutX="8.0" layoutY="12.0" text="AMP_CAN :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<TextField fx:id="AMP_CAN" layoutX="97.0" layoutY="11.0" prefHeight="25.0"
+							prefWidth="92.0" />
+						<Label layoutX="203.0" layoutY="11.0" text="CR_Ems_BstPre :">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<TextField fx:id="CR_Ems_BstPre" layoutX="315.0" layoutY="10.0" prefHeight="25.0"
+							prefWidth="92.0" />
+					</children>
+				</AnchorPane>
+				<Label layoutX="70.0" layoutY="150.0" text="RPM :">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Label>
+				<TextField fx:id="RPM" layoutX="153.0" layoutY="150.0" prefHeight="25.0"
+					prefWidth="92.0" />
+				<Label layoutX="70.0" layoutY="186.0" text="Torque :">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Label>
+				<TextField fx:id="Torque" layoutX="153.0" layoutY="186.0" prefHeight="25.0"
+					prefWidth="92.0" />
+				<Button fx:id="Gauge_send" layoutX="1027.0" layoutY="150.0" mnemonicParsing="false" onAction="#onGaugeSend"
+					prefHeight="65.0" prefWidth="128.0" text="SEND">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Button>
+			</children>
+		</AnchorPane>
+		<Label fx:id="gauge_label" layoutX="125.0" layoutY="447.0" text="  GAUGE  ">
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>

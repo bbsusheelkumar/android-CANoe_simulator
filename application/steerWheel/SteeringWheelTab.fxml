@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="780.0" prefWidth="1264.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.steerWheel.SteerWheelMainController">
+   <children>
+      <AnchorPane fx:id="s_wheel_remocon" layoutX="86.0" layoutY="63.0" prefHeight="278.0" prefWidth="1107.0">
+         <children>
+            <Label fx:id="S_WHEEL_REMOCON" layoutX="40.0" layoutY="-15.0" prefHeight="31.0" prefWidth="173.0" text="  S-WHEEL REMOCON  ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <ButtonBar layoutX="9.0" layoutY="9.0" prefHeight="127.0" prefWidth="1075.0">
+              <buttons>
+                  <Button fx:id="POWER" onAction="#onPowerButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="POWER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="CHANNEL_UP" onAction="#onChannelUpButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="CHANNEL UP" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="VOLUME_UP" onAction="#onVolumeUpButtonClicked"  mnemonicParsing="false" prefHeight="90.0" text="VOLUME UP" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="HANDSFREE_ON" onAction="#onHandsfreeONButtonClicked"  mnemonicParsing="false" prefHeight="90.0" text="HANDSFREE ON" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                <Button fx:id="MODE" onAction="#onModeButtonClicked"  mnemonicParsing="false" prefHeight="90.0" prefWidth="227.0" text="MODE" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+              </buttons>
+            </ButtonBar>
+            <ButtonBar layoutX="9.0" layoutY="136.0" prefHeight="127.0" prefWidth="1075.0">
+               <buttons>
+                  <Button fx:id="MUTE" onAction="#onMuteButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="MUTE" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="CHANNEL_DOWN" onAction="#onChannelDownButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="CHANNEL DOWN" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="VOLUME_DOWN" onAction="#onVolumeDownButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="VOLUME DOWN" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="HANDSFREE_OFF" onAction="#onHandsfreeOFFButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="HANDSFREE OFF" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="VOICE_RECOGNITION" onAction="#onVoiceRecognitionButtonClicked" mnemonicParsing="false" prefHeight="90.0" prefWidth="227.0" text="VOICE RECOGNITION" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </buttons>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tmu_rear_remocon" layoutX="86.0" layoutY="404.0" prefHeight="278.0" prefWidth="1107.0">
+         <children>
+            <Label fx:id="TMU_REAR_REMOCON" layoutX="40.0" layoutY="-15.0" prefHeight="31.0" prefWidth="203.0" text="  TMU &amp; REAR REMOCON  ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ButtonBar layoutX="9.0" layoutY="9.0" prefHeight="127.0" prefWidth="1075.0">
+               <buttons>
+                  <Button fx:id="CALL" onAction="#onCallButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="CALL" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="POI" onAction="#onPOIButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="POI" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="SOS" onAction="#onSOSButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="SOS" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="SEEK_UP" onAction="#onSeekUpButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="SEEK UP" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="SEEK_DOWN" onAction="#onSeekDownButtonClicked" mnemonicParsing="false" prefHeight="90.0" prefWidth="227.0" text="SEEK DOWN" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </buttons>
+            </ButtonBar>
+            <ButtonBar layoutX="9.0" layoutY="136.0" prefHeight="127.0" prefWidth="1075.0">
+               <buttons>
+                  <Button fx:id="REAR_CAMERA_ON" onAction="#onRearCameraONButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="REAR CAMERA ON" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="REAR_CAMERA_OFF" onAction="#onRearCameraOFFButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="REAR CAMERA OFF" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="DRIVING_REGULATION_ON" onAction="#onDrivingRegulationONButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="DRIVING REGULATION ON" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="DRIVING_REGULATION_OFF" onAction="#onDrivingRegulationOFFButtonClicked" mnemonicParsing="false" prefHeight="90.0" text="DRIVING REGULATION OFF" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="DISPLAY_OFF" onAction="#onDisplayOFFButtonClicked" mnemonicParsing="false" prefHeight="90.0" prefWidth="227.0" text="DISPLAY ON/OFF" >
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </buttons>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

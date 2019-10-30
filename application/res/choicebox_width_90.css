@@ -1,0 +1,8 @@
+.choice-box {
+    -fx-pref-width: 90;
+}
+
+.choice-box .context-menu {
+    -fx-min-width: 90; /* Your width for the context menu background shown */
+    -fx-font-size: 14;
+}
